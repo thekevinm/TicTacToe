@@ -61,7 +61,7 @@ export default class App extends React.Component {
   }
 
   onTilePress = (row, col) => {
-    //stops changing tiles that are already taken
+    //stop changing tiles that are already taken
     var value = this.state.gameState[row][col];
     if (value !== 0) { return; }
 
